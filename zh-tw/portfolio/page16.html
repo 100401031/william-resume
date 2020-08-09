@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+  <title>倉儲作業即時資訊Dashboard | Wei-Jhong's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+  <link rel="stylesheet" href="../../src/css/portfolio.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../../src/javascript/PortfolioNav.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../icon.png" />
+  <link rel="shortcut icon" href="../icon.png" type="image/png" />
+</head>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'PingFang TC', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+  }
+</style>
+<!-- Navbar on small screens-->
+<div class="w3-top nav-box" id="topBox">
+  <div class="w3-bar" id="myNavbar">
+    <a
+      class="w3-bar-item w3-hover-black w3-hide-medium w3-hide-large w3-right nav-text"
+      href="javascript:void(0);"
+      onclick="toggleFunction()"
+      title="Toggle Navigation Menu"
+      ><em class="fa fa-bars"></em></a
+    ><a class="w3-bar-item nav-text" href="../index.html#top"><span class="underline">頁首</span></a
+    ><a class="w3-bar-item w3-hide-small nav-text" href="../index.html#about"
+      ><span class="underline"><i class="fa fa-user"></i> 關於我</span></a
+    ><a class="w3-bar-item w3-hide-small nav-text" href="../index.html#portfolio"
+      ><span class="underline"><i class="fa fa-th"></i> 作品集</span></a
+    >
+    <div id="progressBar"></div>
+  </div>
+  <div class="sparkle sparkle-color-1"></div>
+  <div class="sparkle sparkle-color-2"></div>
+  <div id="sparkle"></div>
+  <!-- Navbar on small screens-->
+  <div class="w3-bar-block nav-bg w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+    <a class="w3-bar-item nav-text" href="../index.html#about" onclick="toggleFunction()">關於我</a
+    ><a class="w3-bar-item nav-text" href="../index.html#portfolio" onclick="toggleFunction()"
+      >作品集</a
+    >
+  </div>
+</div>
+<div class="bg-color w3-display-container inshadow">
+  <!-- Photo Grid-->
+  <div class="w3-row section">
+    <div class="w3-row-padding w3-center w3-container">
+      <div class="top-box w3-card-2 w3-round-large" style="margin-bottom: 15px;">
+        <div class="tittle">
+          <h3>
+            <i class="fa fa-lightbulb-o portfolio-text-color tittle-icon"></i
+            ><strong> 自動化倉儲現場即時資訊Dashboard</strong>
+          </h3>
+        </div>
+        <h6 class="portfolio-text-color" style="margin-bottom: 30px;">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>2019-2020
+        </h6>
+        <section class="intro">
+          <h5 style="margin-bottom: -5px;">專案說明</h5>
+          <p style="margin-bottom: 30px;">
+            自動化及資訊化倉儲打造之即時資訊Dashboard。<br />
+            將進貨、包裝及出貨等相關資訊視覺化，協助現場作業主管及作業員最即時且直覺地掌握現況，做出最有效的決策。
+            同時也為品牌加值，展現產品創新及與傳統物流營運模式之差別。<br />
+            我在此專案中負責前期需求研究、訪談/UX研究/前端切版/軟硬體整合及安裝/專案管理。<br />
+          </p>
+        </section>
+      </div>
+      <div class="w3-col m12" style="display: flex; flex-wrap: wrap;">
+        <div class="w3-col m6 outterBox">
+          <div class="w3-round-large w3-card-2 box">
+            <img class="img-width w3-round-large" src="../.././files/pics/page16/dashboard-1.jpg" />
+            <div class="w3-container">
+              <h4>介面風格呈現</h4>
+              <p>
+                採用Neumorphism新擬物風格設計，以符合產品科技化及創新之品牌形象。此圖為UI
+                Prototype。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 outterBox">
+          <div class="w3-round-large w3-card-2 box">
+            <img class="img-width w3-round-large" src="../.././files/pics/page16/dashboard-2.gif" />
+            <div class="w3-container">
+              <h4>頁面動態呈現</h4>
+              <p>
+                實際上線使用的畫面呈現。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 outterBox">
+          <div class="w3-round-large w3-card-2 box">
+            <img class="img-width w3-round-large" src="../.././files/pics/page16/dashboard-3.jpg" />
+            <div class="w3-container">
+              <h4>現場使用情境</h4>
+              <p>
+                設置於倉儲空間入口、辦公室及作業現場，讓各處同仁及參訪人士皆能即時掌握與感受現場狀況。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m6 outterBox">
+          <div class="w3-round-large w3-card-2 box">
+            <img class="img-width w3-round-large" src="../.././files/pics/page16/dashboard-4.gif" />
+            <div class="w3-container">
+              <h4>現場使用情境</h4>
+              <p>
+                設置於倉儲空間入口、辦公室及作業現場，讓各處同仁及參訪人士皆能即時掌握與感受現場狀況。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

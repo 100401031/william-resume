@@ -1,0 +1,1155 @@
+<!DOCTYPE html
+><head>
+  <meta charset="utf-8" />
+  <title>鄭為中 Resume &amp Portfolio</title>
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=0.8,maximum-scale=0.8,user-scalable=no"
+  />
+  <meta property="og:image" content="../files/pics/meta_image.jpg" />
+  <link rel="stylesheet" href="../src/css/normalize.css" />
+  <link rel="stylesheet" href="../src/css/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="../src/jbox/jBox.css" rel="stylesheet" />
+  <script src="../src/jbox/plugins/Image/jBox.Image.js"></script>
+  <script src="../src/javascript/lazyload.min.js"></script>
+  <link href="../src/jbox/plugins/Image/jBox.Image.css" rel="stylesheet" />
+  <script src="../src/jbox/plugins/Notice/jBox.Notice.js"></script>
+  <link href="../src/jbox/plugins/Notice/jBox.Notice.css" rel="stylesheet" />
+  <link href="../src/fontawesome/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="shortcut icon" href="icon.png" type="image/png" />
+  <script>
+    $(document).ready(function () {
+      $('.top-click').click(function () {
+        $('html,body').animate({ scrollTop: $('#top').offset().top }, 800);
+      }),
+        $('.about-click').click(function () {
+          $('html,body').animate({ scrollTop: $('#about').offset().top }, 800);
+        }),
+        $('.portfolio-click').click(function () {
+          $('html,body').animate({ scrollTop: $('#portfolio').offset().top }, 800);
+        });
+    });
+  </script></head
+><style>
+  .tooltiptext,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'PingFang TC', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+  }
+  body,
+  html {
+    height: 100%;
+    color: #000000e6;
+    line-height: 1.8;
+  }
+</style>
+<html>
+  <body>
+    <div class="w3-top top-box" id="topBox">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item nav-btn w3-hover-black w3-hide-medium w3-hide-large w3-right nav-text"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i></a
+        ><a class="w3-bar-item nav-btn top-click nav-text" href="#top"
+          ><span class="underline">頁首</span><span class="nav-guider"></span></a
+        ><a class="w3-bar-item nav-btn w3-hide-small about-click nav-text" href="#about"
+          ><span class="underline"><i class="fa fa-user"></i> 關於我</span></a
+        ><a class="w3-bar-item nav-btn w3-hide-small portfolio-click nav-text" href="#portfolio"
+          ><span class="underline"><i class="fa fa-th"></i> 作品集</span></a
+        >
+        <div id="nav-title" style="white-space: nowrap;">
+          <a class="nav-btn top-click nav-text" href="#top"
+            ><span class="w3-center w3-padding-large w3-wide w3-animate-opacity"
+              ><span class="w3-hide-small">鄭</span>為中的履歷</span
+            ></a
+          >
+        </div>
+        <div class="sparkle sparkle-color-1"></div>
+        <div class="sparkle sparkle-color-2"></div>
+        <div id="progressBar"></div>
+      </div>
+      <div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-card-2" id="navToggle">
+        <a class="w3-bar-item nav-btn about-click" href="#about" onclick="toggleFunction()"
+          >關於我</a
+        ><a class="w3-bar-item nav-btn" href="#portfolio" onclick="toggleFunction()">作品集</a>
+      </div>
+    </div>
+    <div class="inshadow bgimg-1 w3-display-container cover z-index-0" id="top">
+      <div class="outerspace">
+        <div id="particles-js">
+          <div class="w3-display-middle title-box flip" style="white-space: nowrap;">
+            <span class="w3-center w3-padding-large title w3-xlarge w3-wide w3-animate-opacity"
+              ><span class="w3-hide-small">鄭</span>為中的履歷</span
+            >
+          </div>
+        </div>
+        <img class="astronant" src="../files/bg/astronant_line.svg" /><img
+          class="earth"
+          src="../files/bg/earth.png"
+        />
+      </div>
+    </div>
+    <div class="w3-row bgimg-4" id="about">
+      <br />
+      <div class="w3-row-padding w3-center" style="width: 100%;">
+        <br />
+        <div class="w3-row-padding about-box">
+          <div style="padding: 0 3px;">
+            <h2 class="sub-title" style="width: 100%;">
+              <span><strong>關於我</strong></span>
+            </h2>
+          </div>
+          <div class="w3-col s12 m12 l4 w3-margin-bottom w3-round" style="padding: 4px;">
+            <div class="w3-round box-hovering" style="width: 100%;">
+              <div class="w3-display-container w3-center w3-round tooltip z-index-0" id="photoBox">
+                <div
+                  class="flex-box w3-display-bottomright"
+                  style="overflow: hidden; z-index: 300;"
+                >
+                  <i class="fa fa-info-circle w3-text-white info2 text-shadow-2"></i
+                  ><span style="overflow: hidden; width: 100px;"
+                    ><div class="photo-info-tip">更多關於我</div></span
+                  >
+                </div>
+                <img
+                  class="w3-round w3-image hide-pic"
+                  src="../files/pics/me3.jpg"
+                  alt="Photo of Me"
+                  height="100"
+                  style="width: 100%;"
+                />
+                <div class="w3-display-bottomright w3-round" style="width: 100%; height: 100%;">
+                  <svg
+                    class="w3-round"
+                    id="hand"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="274.59px"
+                    height="152.59px"
+                    viewbox="0 0 274.59 152.59"
+                    enable-background="new 0 0 320 152.59"
+                    xml:space="preserve"
+                    style="width: 100%; height: 100%;"
+                  >
+                    <defs>
+                      <lineargradient id="Gradient1">
+                        <stop offset="0%" stop-color="rgb(255,155,155)"></stop>
+                        <stop offset="35%" stop-color="rgb(255,155,155)"></stop>
+                        <stop offset="60%" stop-color="#656565"></stop>
+                        <stop offset="100%" stop-color="#656565"></stop>
+                      </lineargradient>
+                    </defs>
+                    <path
+                      class="paths hide-pic"
+                      id="path1"
+                      opacity="0.8"
+                      fill="none"
+                      stroke="url(#Gradient1)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="                    M202.508,168.784c2.944,0.655,40.547,12.754,43.162,4.906l0.328-2.289c1.307-24.851,7.193-50.355,3.922-75.534                    c0,0,0.055-0.911-1.473-0.49c-9.075,2.561-17.383-0.764-17.383-0.764c1.745,0.736,15.358,0.692,15.358,0.692                    c6.338-7.536,7.747-18.543,7.805-27.752c0.028-4.266,1.887-9.954,1.973-12.001c0.133-3.154,0.087-5.344-0.89-5.56                    c-2.469-0.651-2.952,3.944-3.554,5.376c-1.556,3.706-2.481,6.874-2.481,6.874s-1.346-0.036-1.433-0.64                    c-0.128-1.147,0.169-8.866,0.066-10.536c-0.293-4.717,0.032-10.667-2.733-10.96c-2.731-0.489-3.219,2.559-3.045,7.587                    c-0.055,1.241,0.127,3.719,0.119,5.03c-0.024,4.549-0.112,5.917-1.116,8l-1.347-0.499c-0.951-5.246-0.659-10.545-1.819-15.479                    c-1.228-5.217-2.526-9.194-4.777-8.662c-2.024,0.477-2.592,2.726-2.073,6.927c0.846,6.848,0.861,12.834,0.411,17.867l-1.225,0.327                    c0-2.942-2.288-23.542-7.849-17.984l-0.653,1.309c0,3.597,1.144,6.948,1.144,10.545c0,2.29-0.232,9.152-0.232,9.152l9.716-1.986                    c-3.908,0.8-3.908,0.8-7.504,1.534c-1.565,0.32-1.302-0.418-1.955,0.399c-1.392,1.733-0.598,6.624-0.598,9.733l4.294,3.84                    c-1.983-2.885-4.286-3.742-6.377-5.068c-1.706-1.08,1.646,0.979-0.261-0.784c-1.964-1.962-2.288-4.903-5.232-5.559                    c-4.25-0.981-2.547,1.228-1.896,4.17c0.548,2.734,2,9.646,4.063,13.452c2.873,5.3,6.572,7.438,7.453,9.294l-1.633,2.941                    c-0.328,15.042-7.196,29.757-6.869,45.125l-2.941-3.597c-9.811-7.521-22.562-13.406-31.064-22.563c0,0-2.694-0.778-7.463,3.039                    c-4.771,3.816-4.164,8.674-4.164,8.674s1.042,6.243-2.429,11.793c-3.469,5.549-7.977,6.936-7.977,6.936l-11.448-4.856                    c0,0-7.977-5.551-4.162-10.406c3.816-4.855,7.285-4.162,9.713-2.081c2.429,2.081,4.163,2.775,4.163,2.775s1.04-5.899,4.162-7.285                    c3.122-1.389,4.857,1.041,4.857,1.041s6.651,5.648-6.849,19.148c0,0-15.424-4.92-15.375-9.688s3.063-7.5,6.813-5.375                    s7.063,5.688,7.063,5.688s0.938-6.938,3.188-8.625s3.624-1.726,5.188,1.25s-1.188,8.125-3.875,11.25s-3.563,3.813-3.563,3.813                    s-12.063-4.875-11.938-7.25s0-5.188,2.875-4.125s6.125,5.5,6.125,5.5l1.75,1.313c0,0,2.563-10.25,5.063-10.688                    s2.563,1.75,2.563,1.75s-0.188,5.75-3.375,8.375s-3.625,3.25-3.625,3.25s-10.188-4.625-9.313-6.25s3.813,0.75,4.5,1.5                    s3.625,3.063,3.625,3.063l0.75,0.5c0,0,3.125-8.938,4.188-9.75s1.625-0.625,1.938,0.188s0.688,1.5,0.125,2.5                    s-3.375,4.188-3.375,4.188l-1.875,2.438"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="w3-display-bottomleft w3-container">
+                  <h3 class="w3-text-white text-shadow-1"><strong>鄭為中</strong></h3>
+                </div>
+              </div>
+              <div class="w3-container w3-center">
+                <div class="bottomline-box">
+                  <span style="word-wrap: break-word;"
+                    ><span class="btn-block"
+                      ><a
+                        class="info info-tooltip help-cursor"
+                        href="https://www.linkedin.com/in/wei-jhong-zheng/"
+                        style="text-decoration: none;"
+                        target="_blank"
+                        title="visit my LinkedIn"
+                        ><i class="fa fa-user"></i>LinkedIn</a
+                      ></span
+                    ><em class="fa fa-envelope fa-fw sub-text-color"></em
+                    ><strong>Mail<br /></strong>100401031@mail2.nccu.tw<br /><em
+                      class="fa fa-phone fa-fw sub-text-color"
+                    ></em
+                    ><strong>Phone<br /></strong>0937976360</span
+                  >
+                </div>
+                <div class="bottomline-box">
+                  <h4 class="flex-box">
+                    <em class="fa fa-graduation-cap icon"></em
+                    ><span
+                      ><strong>學歷<br /></strong
+                    ></span>
+                  </h4>
+                  <h6>新聞學系學士學位<br />國立政治大學</h6>
+                  <a
+                    class="info info-tooltip help-cursor"
+                    href="../files/pics/diploma.jpg"
+                    style="text-decoration: none;"
+                    target="_blank"
+                    title="政大新聞學系 學位證書"
+                    data-jbox-image="gallery1"
+                    jbox-image-label="政大新聞學系 學位證書"
+                    ><i class="fa fa-info"></i>學位證書</a
+                  >
+                </div>
+                <div class="w3-container w3-center bottomline-box">
+                  <h4 class="flex-box">
+                    <em class="fa fa-gears icon"></em><span><strong> 技能</strong></span>
+                  </h4>
+                  <ul class="skills">
+                    <li>
+                      <div class="collapse">
+                        <i class="fa fa-file-code-o sub-text-color"></i>前端技能<i
+                          class="fa fa-caret-down"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                      <div class="collapse-content">
+                        <ul>
+                          <li><p>Vue</p></li>
+                          <li><p>JavaScript(ES6)</p></li>
+                          <li><p>jQuery</p></li>
+                          <li><p>HTML</p></li>
+                          <li><p>CSS/SCSS</p></li>
+                          <li><p>Bootstrap</p></li>
+                          <li><p>ElementUI</p></li>
+                          <li><p>Git版本控制</p></li>
+                          <li><p>VSCode</p></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapse">
+                        <i class="fa fa-object-group sub-text-color"></i>設計技能<i
+                          class="fa fa-caret-down"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                      <div class="collapse-content">
+                        <ul>
+                          <li><p>Sketch</p></li>
+                          <li><p>Zeplin</p></li>
+                          <li><p>Photoshop</p></li>
+                          <li><p>Illustrator</p></li>
+                          <li><p>Indesign</p></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapse">
+                        <i class="fa fa-film sub-text-color"></i>影音技能<i
+                          class="fa fa-caret-down"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                      <div class="collapse-content">
+                        <ul>
+                          <li><p>EDIUS</p></li>
+                          <li><p>Premiere</p></li>
+                          <li><p>After Effects</p></li>
+                          <li><p>攝影</p></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <br />
+                </div>
+                <div class="w3-container w3-center" style="padding-bottom: 50px;">
+                  <h3 class="flex-box">
+                    <em class="fa fa-language icon"></em><span><strong> 語言</strong></span>
+                  </h3>
+                  <div style="display: inline-block; text-align: left;">
+                    <div class="skillp skillmt">
+                      <i class="fa fa-globe sub-text-color"></i> 中文
+                    </div>
+                    <script></script>
+                    <div class="skillp skillmt">
+                      <i class="fa fa-globe sub-text-color"></i> 英文<br />TOEIC 805<br /><a
+                        class="info info-tooltip help-cursor"
+                        href="../files/pics/toeic.jpg"
+                        style="text-decoration: none;"
+                        title="TOEIC證書"
+                        data-jbox-image="gallery1"
+                        jbox-image-label="TOEIC證書"
+                        ><i class="fa fa-info"></i>TOEIC證書</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col s12 m12 l8" style="padding: 4px;">
+            <div class="w3-container box-hovering w3-round" style="margin-bottom: 9px;">
+              <div class="flex-box title-bottomline" style="text-align: left;">
+                <h3 style="margin-right: auto;">
+                  <em class="fa fa-drivers-license icon"></em><span><strong> 簡介</strong></span>
+                </h3>
+              </div>
+              <p style="text-align: left;">
+                先前分別任職於VR內容雲端服務商及物流地產開發商，主要負責與行銷及品牌相關之設計產出及專案管理。發現自己對網頁技術的熱忱及喜愛，於是離職投入前端開發的學習，透過線上課程自學Javascript、Vue，經過半年學習養成自學能力，並透過專案實作，培養發現與解決問題的能力。期許職涯能透過不斷學習及擴展知識，挑戰解決不同問題。
+              </p>
+            </div>
+            <div
+              class="w3-container box-hovering w3-display-container w3-round"
+              style="margin-bottom: 90px;"
+            >
+              <div class="w3-center flex-box title-bottomline">
+                <h3 style="margin-right: auto;">
+                  <em class="fa fa-flag icon"></em><span><strong> 經歷</strong></span>
+                </h3>
+                <!-- <span class="skillTog"
+                  ><span>相關技能</span>
+                  <label class="switch"
+                    ><input id="skillTogBtn" type="checkbox" /><span
+                      class="slider round"
+                    ></span></label
+                ></span> -->
+              </div>
+              <div class="expContainer">
+                <h5 class="expTitile"><strong>介面設計師</strong></h5>
+                <h5 class="expCompany">永聯物流開發股份有限公司 - Branding Team</h5>
+                <span class="expDate sub-text-color">2019年4月 - 2020年2月</span>
+                <ul>
+                  <li>
+                    <div class="collapse">
+                      資訊產品UI&UX及前端製作<i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="collapse-content">
+                      <ul>
+                        <li>
+                          倉儲作業即時資訊Dashboard -
+                          前期研究/介面設計/前端刻版/圖表元件/硬體配置<span class="hashtag"
+                            ><span class="sketch">Sketch</span><span class="zeplin">Zeplin</span
+                            ><span class="react info-tooltip" title="React Js">React</span
+                            ><span class="ant-design">Ant Design</span
+                            ><span class="apexcharts info-tooltip" title="APEXCHARTS.Js"
+                              ><a href="https://apexcharts.com/" target="_blank"
+                                >Apexcharts</a
+                              ></span
+                            ><span class="gitlab">Gitlab</span
+                            ><span class="illustrator info-tooltip" title="Adobe Illustrator"
+                              >Ai</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          貨態追蹤系統App - 視覺風格定義<span class="hashtag"
+                            ><span class="sketch">Sketch</span><span class="zeplin">Zeplin</span
+                            ><span class="illustrator info-tooltip" title="Adobe Illustrator"
+                              >Ai</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          產品形象網頁建置 - 設計&製作<span class="hashtag"
+                            ><span class="html">HTML</span><span class="css">CSS</span
+                            ><span class="js info-tooltip" title="Javascript">Js</span
+                            ><span class="aws info-tooltip" title="AWS S3">AWS</span
+                            ><span class="ga info-tooltip" title="Google Analytics">GA</span
+                            ><span class="gtm info-tooltip" title="Google Tag Manager">GTM</span
+                            ><span class="gas info-tooltip" title="Google Apps Script"
+                              >GAS</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          內部知識分享電子書 - 網頁設計&製作<span class="hashtag"
+                            ><span class="html">HTML</span><span class="css">CSS</span
+                            ><span class="js info-tooltip" title="Javascript">Js</span
+                            ><span class="aws info-tooltip" title="AWS S3">AWS</span></span
+                          >
+                        </li>
+                        <li>
+                          活動網頁建置 - 設計&製作<span class="hashtag"
+                            ><span class="html">HTML</span><span class="css">CSS</span
+                            ><span class="js info-tooltip" title="Javascript">Js</span
+                            ><span class="aws info-tooltip" title="AWS S3">AWS</span></span
+                          >
+                        </li>
+                        <li>
+                          電子信 - 設計&製作<span class="hashtag"
+                            ><span class="html">HTML</span><span class="css">CSS</span
+                            ><span class="mailchimp">
+                              <a href="https://mailchimp.com/" target="_blank">MailChimp</a></span
+                            ></span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapse">
+                      品牌及行銷相關專案設計、發想及執行<i
+                        class="fa fa-caret-down"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="collapse-content">
+                      <ul>
+                        <li>總公司與子公司品牌規劃&概念</li>
+                        <li>品牌概念延伸之視覺設計/動態視覺腳本&製作/空間風格設計</li>
+                        <li>大型展覽設計規劃與建置</li>
+                        <li>攝影比賽規劃與執行</li>
+                        <li>設計輸出品/影像相關外包專案管理</li>
+                        <li>品牌部門相關之電子&數位產品規劃及採購</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapse">
+                      對內文化活動發想、設計與執行<i
+                        class="fa fa-caret-down"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="collapse-content">
+                      <ul>
+                        <li>夏日活動規劃&拍攝&影像剪輯</li>
+                        <li>全公司個人文化照活動規劃&攝影棚拍</li>
+                        <li>聖誕節活動規劃&佈置</li>
+                        <li>尾牙活動活動規劃&佈置&場控</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <div class="expContainer">
+                <h5 class="expTitile"><strong>視覺設計師</strong></h5>
+                <h5 class="expCompany">iStaging數位宅妝 - 行銷部門</h5>
+                <span class="expDate sub-text-color">2018年8月 - 2019年4月</span>
+                <ul>
+                  <li>
+                    負責行銷相關多媒體內容規劃設計及製作：影像動畫製作、平面視覺設計及製作。<span
+                      class="hashtag"
+                      ><span class="illustrator info-tooltip" title="Adobe Illustrator">Ai</span
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span
+                      ><span class="pr info-tooltip" title="Adobe Premiere">Pr</span
+                      ><span class="ae info-tooltip" title="After Effects">Ae</span></span
+                    >
+                  </li>
+                  <li>
+                    官網更動、新增及維護。<span class="hashtag"
+                      ><span class="html">HTML</span><span class="css">CSS</span
+                      ><span class="js info-tooltip" title="Javascript">Js</span></span
+                    >
+                  </li>
+                  <li>
+                    行銷活動頁面製作。<span class="hashtag"
+                      ><span class="html">HTML</span><span class="css">CSS</span
+                      ><span class="js info-tooltip" title="Javascript">Js</span></span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <div class="expContainer">
+                <h5 class="expTitile"><strong>攝影主任</strong></h5>
+                <h5 class="expCompany">政大大學報 - 攝影影音中心</h5>
+                <span class="expDate sub-text-color">2015年2月 - 2015年6月</span>
+                <ul>
+                  <li>
+                    指導大學報影音中心5名影音記者學弟妹新聞攝影及影音報導產製。<span class="hashtag"
+                      ><span class="edius">EDIUS</span></span
+                    >
+                  </li>
+                  <li>
+                    指導大學報影音中心5名影音記者以網頁形式呈現期中、期末攝影專題。<span
+                      class="hashtag"
+                      ><span class="html">HTML</span><span class="css">CSS</span
+                      ><span class="js info-tooltip" title="Javascript">Js</span></span
+                    >
+                  </li>
+                  <li>
+                    設計及製作大學報影音片頭動畫。<span class="hashtag"
+                      ><span class="illustrator info-tooltip" title="Adobe Illustrator">Ai</span
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span
+                      ><span class="ae info-tooltip" title="After Effects">Ae</span></span
+                    >
+                  </li>
+                  <li>
+                    規劃大學報新網站首頁版面。<span class="hashtag"
+                      ><span class="illustrator info-tooltip" title="Adobe Illustrator"
+                        >Ai</span
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <div class="expContainer">
+                <h5 class="expTitile"><strong>- 實習生</strong></h5>
+                <h5 class="expCompany">香港商FOX福斯傳媒有限公司台灣分公司 - 國家地理頻道部門</h5>
+                <span class="expDate sub-text-color">2014年7月 - 2015年1月 (暑期實習後獲續聘)</span>
+                <ul>
+                  <li>協助紀綠片《馬坎與鷹(Macan and the Eagle)》英文腳本、旁白初步翻譯為中文。</li>
+                  <li>
+                    參與紀錄片《台灣菁英戰士：雷虎小組》、《台灣菁英戰士－傲氣飛鷹》拍攝及後製。<span
+                      class="hashtag"
+                      ><span class="edius">EDIUS</span></span
+                    >
+                  </li>
+                  <li>參與《老爺車轉生術》、《街頭科學實驗室》節目廣告拍攝。</li>
+                  <li>參與節目主持人Tim Shaw《街頭科學實驗室》台北宣傳活動。</li>
+                </ul>
+                <a
+                  class="-circle info info-tooltip help-cursor"
+                  href="../files/pics/coi.jpg"
+                  style="text-decoration: none; margin-top: 10px; display: inline-block;"
+                  data-jbox-image="gallery1"
+                  title="FOX福斯傳媒有限公司台灣分公司 實習證書"
+                  jbox-image-label="FOX福斯傳媒有限公司台灣分公司 實習證書"
+                  ><i class="fa fa-info"></i>實習證書</a
+                >
+              </div>
+              <hr />
+              <div class="expContainer">
+                <h5 class="expTitile"><strong>攝影及視覺設計</strong></h5>
+                <h5 class="expCompany">波士新聞網POSE NEWS</h5>
+                <span class="expDate sub-text-color">2014年9月 - 2015年2月</span>
+                <ul class="bottomline-box">
+                  <li>
+                    和系上六位同學共同發想執行的《波士新聞網》企劃，我主要擔任攝影及圖像後製，視覺設計與發想。<br />
+                    有鑑於新聞媒體為追求閱聽眾目光，極盡各種腥羶色並加油添醋的手段，讓我們反思究竟能不能透過另一種方法吸引閱聽眾而不失公正客觀的報導。於是我們透過特兒擺拍照片，加上髮妝服飾及後製，和我們以純淨新聞（客觀新聞報導）手法撰寫的報導並列，以創意吸睛而不失公正客觀的原則呈現新聞。<span
+                      class="hashtag"
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span></span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="expContainer">
+                <span class="flex-box" style="justify-content: left;"
+                  ><i class="fa fa-trophy icon" style="font-size: 22px;"></i>
+                  <h4><strong> 榮譽與獎項</strong></h4></span
+                >
+                <ul>
+                  <li>
+                    政大一景」校園照片徵選活動－第八名 (2013)<span class="hashtag"
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span></span
+                    >
+                  </li>
+                  <li>學期最佳新聞照片－體操選手凃育辰鞍馬項目 (2012)</li>
+                  <li>
+                    <a class="exp-link" href="https://youtu.be/HRYhv5ifapI" target="_blank"
+                      >學期最佳影音專題－牯嶺街書香市集 (2012)</a
+                    ><span class="hashtag"><span class="edius">EDIUS</span></span>
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <div class="expContainer" style="margin-bottom: 30px;">
+                <span class="flex-box" style="justify-content: left;"
+                  ><i class="fa fa-users icon"></i>
+                  <h4><strong> 社團及活動經歷</strong></h4></span
+                >
+                <ul>
+                  <li>
+                    政大旅行研究社－創社幹部、美宣組長 (3/2014-1/2015)<span class="hashtag"
+                      ><span class="illustrator info-tooltip" title="Adobe Illustrator">Ai</span
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span></span
+                    >
+                  </li>
+                  <li>東信國小品德教育營－攝影組長 (2014)</li>
+                  <li>
+                    政大花友會 －美宣組長 (2/2013-6/2013)<span class="hashtag"
+                      ><span class="illustrator info-tooltip" title="Adobe Illustrator">Ai</span
+                      ><span class="ps info-tooltip" title="Adobe Photoshop">Ps</span></span
+                    >
+                  </li>
+                  <li>政大新聞系營隊－攝影組長 (2013)</li>
+                  <li>政大花友會返鄉服務 (2012、2013)</li>
+                  <li>政大新聞系籃球隊 - 球員, 副隊長(2012), 隊長(2013)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="inshadow bgimg-3 w3-display-container inshadow z-index-0 portfolio-title-box"
+      id="portfolio"
+    >
+      <div class="w3-display-middle title">
+        <span class="w3-xxlarge w3-text-white w3-wide text-shadow-1">作品集</span>
+      </div>
+      <img class="solar-system" src="../files/pics/vector/solar_system.png" />
+    </div>
+    <div class="bgimg-4">
+      <div class="pfl-section">
+        <ul class="pfl-grid">
+          <h2 class="w3-center w3-margin-bottom flex-box" style="margin-top: 0; padding-top: 20px;">
+            <em class="fa fa-suitcase sub-text-color icon" style="font-size: 30px !important;"></em
+            ><span class="sub-title"><strong> 作品</strong></span>
+          </h2>
+          <!-- <div id="myBtnContainer">
+            <button class="btn active w3-card-2" onclick='filterSelection("all")'>全部</button>
+            <button class="btn w3-card-2" onclick='filterSelection("web")'>Web</button>
+            <button class="btn w3-card-2" onclick='filterSelection("Sketch")'>Sketch</button>
+            <button class="btn w3-card-2" onclick='filterSelection("photoshop")'>Photoshop</button>
+            <button class="btn w3-card-2" onclick='filterSelection("illustrator")'>
+              Illustrator
+            </button>
+            <button class="btn w3-card-2" onclick='filterSelection("indesign")'>Indesign</button>
+            <button class="btn w3-card-2" onclick='filterSelection("aftereffects")'>
+              After Effects
+            </button>
+            <button class="btn w3-card-2" onclick='filterSelection("premiere")'>Premiere</button>
+            <button class="btn w3-card-2" onclick='filterSelection("edius")'>EDIUS</button>
+            <button class="btn w3-card-2" onclick='filterSelection("muse")'>Adobe Muse</button>
+          </div> -->
+          <div class="container">
+            <div class="pfl-li filterDiv web Sketch frame" style="background-color: #fff;">
+              <a
+                href="https://100401031.github.io/Taroko-prototype"
+                target="_blank"
+                style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page21/1.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">Taroko 線上訂房平台</span>
+                    <p>2019-2020<br />Vue/ ElementUI / Google Map API</p>
+                    <figcaption class="work-intro">
+                      <span
+                        ><title>創作說明</title
+                        ><br />以使用者體驗出發打讚的線上訂房平台。為修習六角學院「Vue
+                        出一個電商網站」線上課程之專案作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv web Sketch frame" style="background-color: #fff;">
+              <a href="./portfolio/page16.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page16/dashboard-4.gif"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">即時資訊Dashboard</span>
+                    <p>2019-2020<br />HTML/CSS/Javascript/React/Sketch/Zeplin</p>
+                    <figcaption class="work-intro">
+                      <span
+                        ><title>創作說明</title
+                        ><br />自動化及資訊化倉儲即時資訊Dashboard。讓現場作業主管及作業員最即時且直覺地掌握現況，並為品牌加值。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv web Sketch frame" style="background-color: #fff;">
+              <a href="./portfolio/page18.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page18/echub-website.gif"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">產品網站</span>
+                    <p>2019<br />HTML/CSS/Javascript/Sketch/AWS/GTM</p>
+                    <figcaption class="work-intro">
+                      <span
+                        ><title>創作說明</title><br />自動化倉儲EC
+                        Hub之形象網站。整體理念主要是傳遞人與科技的連結，科技因人而誕生。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv web frame" style="background-color: #fff;">
+              <a href="./portfolio/page17.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page17/ebook/ebook-cover.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">電子書-版面設計&製作</span>
+                    <p>2019-2020<br />HTML/CSS/Javascript/AWS</p>
+                    <figcaption class="work-intro">
+                      <span
+                        ><title>創作說明</title
+                        ><br />公司內部知識分享用之電子書，讓全公司能夠快速閱讀吸收、以利溝通協作。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv frame" style="background-color: #fff;">
+              <a href="./portfolio/page19.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page19/exhibition-1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">對外活動&展覽</span>
+                    <p>2019-2020<br />&ensp;</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title><br />對外活動及展覽之成果。</span>
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv frame" style="background-color: #fff;">
+              <a href="./portfolio/page20.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page20/banquet-1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">對內文化活動</span>
+                    <p>2019-2020<br />&ensp;</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title><br />對內文化活動之成果。</span>
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv web frame" style="background-color: #fff;">
+              <a href="./portfolio/page13.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/thumbnail/shooter.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">UI/UX及Web開發</span>
+                    <p>2018-2019<br />HTML/CSS/Javascript</p>
+                    <figcaption class="work-intro">
+                      <span
+                        ><title>創作說明</title
+                        ><br />於iStaging工作期間所設計及製作的UI/UX及Web相關作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv premiere aftereffects frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page12.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/thumbnail/1.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">影像及動畫作品</span>
+                    <p>2016-2019<br />After Effects | Premiere Pro | Photoshop</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >以Adobe After Effects / Premiere Pro製作之動畫作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv photoshop frame" style="background-color: #fff;">
+              <a href="./portfolio/page14.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/thumbnail/KaohsiungSenior High-tumbnail.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">全景內容拍攝及製作</span>
+                    <p>2018<br />After Effects | Photoshop</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >以Insta360 Pro拍攝並使用iStaging VR Maker製作之作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv illustrator photoshop frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page15.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page15/virtual-open-house.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">平面設計:iStaging</span>
+                    <p>2018-2019<br />Illustrator</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >為iStaging製作之平面設計作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv illustrator frame" style="background-color: #fff;">
+              <a href="./portfolio/page2.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page2/1-1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">平面設計：政大教發中心</span>
+                    <p>2015<br />Illustrator</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >受政大教學發展中心主任張寶芳教授所託，為教發中心所繪製之作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv photoshop frame" style="background-color: #fff;">
+              <a href="./portfolio/page3.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page3/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">藝術與文化創意習作</span>
+                    <p>2015<br />Photoshop</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >修習「十五世紀後歐洲藝術史」及「文化創意產業行銷」課程之習作。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv photoshop muse frame" style="background-color: #fff;">
+              <a href="./portfolio/page4.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page4/1.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">網頁設計與規劃</span>
+                    <p>2015<br />Adobe Muse | Photoshop</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >修習「網站企劃與設計」課程之習作。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv photoshop frame" style="background-color: #fff;">
+              <a href="./portfolio/page5.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page5/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">波士新聞圖像創作</span>
+                    <p>2015<br />Photoshop</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >反思新聞媒體呈現形式，試圖以攝影及圖像後製來呈現新聞不同的樣貌。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv indesign illustrator frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page6.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page6/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">電子書: 米開朗基羅</span>
+                    <p>2015<br />Adobe Indesign | Illustrator</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >「數位出版」課程期末作品，利用Indesign製作之電子書創作。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv photoshop illustrator frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page7.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page7/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">政大旅行研究社美術設計</span>
+                    <p>2014-2015<br />Photoshop | Illustrator</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >擔任旅行研究社美宣長期間，為文宣及粉絲專頁製作平面設計的作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv indesign frame" style="background-color: #fff;">
+              <a href="./portfolio/page8.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page8/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">XML & 電子書應用</span>
+                    <p>2015<br />Indesign | HTML | XML</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >修習「xml技術應用在電子書」課程之作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv photoshop illustrator flash frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page9.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page9/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">媒體創新課成果</span>
+                    <p>2015<br />Photoshop | Illustraotor | Flash</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >「媒體創新與創業」課程期末作品，獲得班級評比第一名。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div
+              class="pfl-li filterDiv indesign illustrator frame"
+              style="background-color: #fff;"
+            >
+              <a href="./portfolio/page10.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page10/1.png"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">電子書: 漫遊伊斯蘭</span>
+                    <p>2015<br />Indesign | Illustrator</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >修習「新聞多媒體敘事」課程，以Indesign創作之作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+            <div class="pfl-li filterDiv edius frame" style="background-color: #fff;">
+              <a href="./portfolio/page11.html" style="text-decoration: none;"
+                ><div class="img-box">
+                  <div class="pfl-box2 tiles" data-scale="1.1">
+                    <img
+                      class="photo lazyload"
+                      data-src="../files/pics/page11/1.jpg"
+                      style="width: 100%;"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <figure class="slide-box">
+                    <span class="pfl-title">政大大學報作品</span>
+                    <p>2012-2013<br />Photography | EDIUS</p>
+                    <figcaption class="work-intro">
+                      <span><title>創作說明</title></span><br /><span
+                        >擔任大學報攝影影音記者期間，採訪報導、拍攝、錄製、編輯之作品。</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div></a
+              >
+            </div>
+          </div>
+        </ul>
+      </div>
+      <br />
+    </div>
+    <footer
+      class="w3-container w3-center inshadow text-shadow-1 bgimg-6 w3-opacity-min"
+      style="color: #f5f5f5;"
+    >
+      <div><h4 style="margin: 50px 0 50px 0;">謝謝您瀏覽我的履歷和作品集</h4></div>
+      <div style="font-size: 12px; padding-bottom: 5px;">
+        此網頁適合透過行動裝置瀏覽<br /><a
+          href="https://search.google.com/test/mobile-friendly?id=2_U5eIttgzx1ZJOcNkyK2A"
+          target="_blank"
+          >詳閱Google相容性測試報告</a
+        >
+      </div>
+    </footer>
+    <script>
+      lazyload();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="../src/jbox/jBox.min.js"></script>
+    <script type="text/javascript" src="../src/javascript/index.js"></script>
+  </body>
+</html>
