@@ -394,35 +394,35 @@ $(document).ready(function () {
   // certificationPhoto.getContent('data-jbox-content');
 });
 
-var toolTip = new jBox('Tooltip');
-toolTip.attach('.info-tooltip');
+// var toolTip = new jBox('Tooltip');
+// toolTip.attach('.info-tooltip');
 
-var moreInfo = [
-  '我來自花蓮純樸的小鄉村，熱愛大自然、山林、海洋，總能使我內心靜謐，也是我動力、靈感的泉源。',
-  '個性樸實、和善、樂於溝通、助人，能為他人設想周到。熱愛思考、突破及創新。',
-  '希望透過設計、藝術、創作來傳遞、分享美好的事物與感受。',
-  '設計注重細節，能確保每個環節都能有效且精準地傳遞資訊、概念。',
-  '大學大眾傳播、新聞資訊相關的課程讓我能掌握傳播概念與受眾的研究分析，以達到UX優化的目的。',
-  '對網頁、APP開發有熱忱，能不斷研究學習、開創符合產品及使用者需求的功能，同時注重介面上、視覺上各種表現的可能。'
-];
-var infoNumber = moreInfo.length;
-var originalInfoNumber = moreInfo.length;
+// var moreInfo = [
+//   '我來自花蓮純樸的小鄉村，熱愛大自然、山林、海洋，總能使我內心靜謐，也是我動力、靈感的泉源。',
+//   '個性樸實、和善、樂於溝通、助人，能為他人設想周到。熱愛思考、突破及創新。',
+//   '希望透過設計、藝術、創作來傳遞、分享美好的事物與感受。',
+//   '設計注重細節，能確保每個環節都能有效且精準地傳遞資訊、概念。',
+//   '大學大眾傳播、新聞資訊相關的課程讓我能掌握傳播概念與受眾的研究分析，以達到UX優化的目的。',
+//   '對網頁、APP開發有熱忱，能不斷研究學習、開創符合產品及使用者需求的功能，同時注重介面上、視覺上各種表現的可能。'
+// ];
+// var infoNumber = moreInfo.length;
+// var originalInfoNumber = moreInfo.length;
 
-$('#photoBox').click(function noticeBottom() {
-  var infoLoop = infoNumber % moreInfo.length;
-  // console.log(infoLoop);
-  infoNumber++;
-  // console.log(infoNumber);
-  new jBox('Notice', {
-    trigger: 'click',
-    content: ' <span class="photo-info-count">' + (infoLoop + 1) + '</span>' + moreInfo[infoLoop], //+' <span class="">'+(infoLoop+1)+' of '+originalInfoNumber+'</span>'
-    color: 'custom',
-    position: {
-      x: 5,
-      y: 55
-    }
-  });
-});
+// $('#photoBox').click(function noticeBottom() {
+//   var infoLoop = infoNumber % moreInfo.length;
+//   // console.log(infoLoop);
+//   infoNumber++;
+//   // console.log(infoNumber);
+//   new jBox('Notice', {
+//     trigger: 'click',
+//     content: ' <span class="photo-info-count">' + (infoLoop + 1) + '</span>' + moreInfo[infoLoop], //+' <span class="">'+(infoLoop+1)+' of '+originalInfoNumber+'</span>'
+//     color: 'custom',
+//     position: {
+//       x: 5,
+//       y: 55
+//     }
+//   });
+// });
 
 var switchStatus = false;
 $('#skillTogBtn').on('change', function () {
